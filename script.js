@@ -40,5 +40,4 @@ innerHTML += `<div class="item-container">
 </div>`;
  });
 itemContainerElement.innerHTML = innerHTML;
-// myntra-clone
 }
