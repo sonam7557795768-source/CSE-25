@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store-Myntra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+  <img src="myntra-logo.png" alt="Myntra Logo">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="#" class="nav-link category-men" onclick="setActiveLink(this); filterCategory('men')">MEN</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link category-women" onclick="setActiveLink(this); filterCategory('women')">WOMEN</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link category-kids" onclick="setActiveLink(this); filterCategory('kids')">KIDS</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link category-home" onclick="setActiveLink(this); filterCategory('home')">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link category-beauty" onclick="setActiveLink(this); filterCategory('beauty')">BEAUTY</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link category-genz" onclick="setActiveLink(this); filterCategory('genz')">GENZ</a>
+    </li>
+    <li class="nav-item studio">
+      <a href="#" class="nav-link category-studio" onclick="setActiveLink(this); filterCategory('studio')">STUDIO</a><span>New</span>
+    </li>
+  </ul>
+</div>
+<div class="nav-right">
+    <div class="search-bar">
+    <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <div>
+                <i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="bag-container">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Bag</p>
+                <span class="bag-item-count">0</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+    <img src="banner.jpg" alt="Myntra Banner">
+</section>
+
+
+        <div class="items-container">
+            <div class="item-container">
+                <img src="image1.webp" alt="img">
+                <div class="rating">4.5 ⭐ 780</div>
+                <div class="company">Peter England</div>
+                <div class="item-name">Regular Fit Casual Shirt</div>
+                <div class="price">
+                    <span class="current-price">RS 465</span>
+                    <span class="original-price">RS 2499</span>
+                    <span class="discount">(81% OFF)</span>
+                </div>
+                <button class="btn-add-bag">Add to Bag</button>
+            </div>
+        </div>
+    </main>
+<footer class="footer-container">
+  <div class="footer-column">
+    <div class="footer-section">
+      <h3>ONLINE SHOPPING</h3>
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Home & Living</a></li>
+        <li><a href="#">Beauty</a></li>
+        <li><a href="#">Genz</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Myntra Insider</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-section" style="margin-top: 25px;">
+      <h3>USEFUL LINKS</h3>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Site Map</a></li>
+        <li><a href="#">Corporate Information</a></li>
+        <li><a href="#">Whitehat</a></li>
+        <li><a href="#">Cleartrip</a></li>
+        <li><a href="#">Myntra Global</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <div class="footer-section">
+      <h3>CUSTOMER POLICIES</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">T&C</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">Track Orders</a></li>
+        <li><a href="#">Shipping</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <div class="footer-section">
+      <h3 style="visibility: hidden; margin-bottom: 12px;">POLICIES CONT.</h3>
+      <ul>
+        <li><a href="#">Cancellation</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Grievance Redressal</a></li>
+        <li><a href="#">FSSAI Food Safety</a></li>
+        <li><a href="#">Connect app</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    
+
+    
+
+
+    <script src="data/items.js"></script>
+
+<script src="script.js"></script>
+</body>
+</body>
+</html>
+
